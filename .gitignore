@@ -1,0 +1,9 @@
+*.del
+*.rsr
+*.fhz
+*.lzv
+*.mer
+*.db
+*.db.old
+
+
