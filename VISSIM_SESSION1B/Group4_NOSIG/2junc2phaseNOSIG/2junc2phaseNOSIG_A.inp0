@@ -1152,7 +1152,7 @@
 		<ssam fromTime="0" toTime="99999" writeFile="false"/>
 		<sigChgs writeDatabase="false" writeFile="false"/>
 		<vehInpData writeFile="true"/>
-		<vehInps collectData="false" fromTime="0" interval="99999" toTime="99999"/>
+		<vehInps collectData="true" fromTime="0" interval="99999" toTime="99999"/>
 		<vehNetPerf collectData="false" fromTime="0" interval="99999" toTime="99999"/>
 		<vehRec filterType="ALL" fromTime="0" inclParkVehs="false" resolution="1" toTime="99999" writeDatabase="false" writeFile="false">
 			<selectedAttributes>
@@ -2710,7 +2710,7 @@
 		<signalHead allPedTypes="true" allVehTypes="true" anmFlag="false" complRate="1" dischRecAct="false" isBlockSig="false" lane="19 1" localNo="0" name="B1" no="21" pos="106.05316494954987" sg="3 1" slowDownDist="3" type="CIRCULAR" vAmberBlock="0"/>
 		<signalHead allPedTypes="true" allVehTypes="true" anmFlag="false" complRate="1" dischRecAct="false" isBlockSig="false" lane="20 1" localNo="0" name="" no="23" pos="348.53456600432662" sg="3 1" slowDownDist="3" type="CIRCULAR" vAmberBlock="0"/>
 	</signalHeads>
-	<simulation comment="" numCores="1" numRuns="1" randSeed="42" randSeedIncr="1" retroSync="false" simMode="MICRO" simPeriod="30000" simRes="10" simSpeed="10" startTm="0" useAllCores="true" useMaxSimSpeed="false" volumeIncrDynAssign="0"/>
+	<simulation comment="" numCores="1" numRuns="1" randSeed="42" randSeedIncr="1" retroSync="false" simMode="MICRO" simPeriod="3600" simRes="10" simSpeed="10" startTm="0" useAllCores="true" useMaxSimSpeed="true" volumeIncrDynAssign="0"/>
 	<timeDistributions>
 		<timeDistribution mean="0.5" name="0.5 s" no="1" stdDev="0" type="NORMAL"/>
 		<timeDistribution mean="0.9" name="0.9 s" no="2" stdDev="0" type="NORMAL"/>
@@ -2725,6 +2725,10 @@
 		<timeIntervalSet no="VEHICLEINPUT">
 			<timeInts>
 				<timeInterval start="0"/>
+				<timeInterval start="900"/>
+				<timeInterval start="1800"/>
+				<timeInterval start="2700"/>
+				<timeInterval start="3600"/>
 			</timeInts>
 		</timeIntervalSet>
 		<timeIntervalSet no="VEHICLEROUTESTATIC">
@@ -2825,41 +2829,73 @@
 		<vehicleInput anmFlag="false" link="3" name="" no="1">
 			<timeIntVehVols>
 				<timeIntervalVehVolume cont="false" timeInt="1 0" vehComp="1" volType="STOCHASTIC" volume="800"/>
+				<timeIntervalVehVolume cont="true" timeInt="1 900000" vehComp="1" volType="STOCHASTIC" volume="800"/>
+				<timeIntervalVehVolume cont="true" timeInt="1 1800000" vehComp="1" volType="STOCHASTIC" volume="800"/>
+				<timeIntervalVehVolume cont="true" timeInt="1 2700000" vehComp="1" volType="STOCHASTIC" volume="800"/>
+				<timeIntervalVehVolume cont="false" timeInt="1 3600000" vehComp="1" volType="STOCHASTIC" volume="0"/>
 			</timeIntVehVols>
 		</vehicleInput>
 		<vehicleInput anmFlag="false" link="6" name="" no="2">
 			<timeIntVehVols>
 				<timeIntervalVehVolume cont="false" timeInt="1 0" vehComp="1" volType="STOCHASTIC" volume="400"/>
+				<timeIntervalVehVolume cont="true" timeInt="1 900000" vehComp="1" volType="STOCHASTIC" volume="400"/>
+				<timeIntervalVehVolume cont="true" timeInt="1 1800000" vehComp="1" volType="STOCHASTIC" volume="400"/>
+				<timeIntervalVehVolume cont="true" timeInt="1 2700000" vehComp="1" volType="STOCHASTIC" volume="400"/>
+				<timeIntervalVehVolume cont="false" timeInt="1 3600000" vehComp="1" volType="STOCHASTIC" volume="0"/>
 			</timeIntVehVols>
 		</vehicleInput>
 		<vehicleInput anmFlag="false" link="7" name="" no="3">
 			<timeIntVehVols>
 				<timeIntervalVehVolume cont="false" timeInt="1 0" vehComp="1" volType="STOCHASTIC" volume="300"/>
+				<timeIntervalVehVolume cont="true" timeInt="1 900000" vehComp="1" volType="STOCHASTIC" volume="300"/>
+				<timeIntervalVehVolume cont="true" timeInt="1 1800000" vehComp="1" volType="STOCHASTIC" volume="300"/>
+				<timeIntervalVehVolume cont="true" timeInt="1 2700000" vehComp="1" volType="STOCHASTIC" volume="300"/>
+				<timeIntervalVehVolume cont="false" timeInt="1 3600000" vehComp="1" volType="STOCHASTIC" volume="0"/>
 			</timeIntVehVols>
 		</vehicleInput>
 		<vehicleInput anmFlag="false" link="9" name="" no="4">
 			<timeIntVehVols>
 				<timeIntervalVehVolume cont="false" timeInt="1 0" vehComp="1" volType="STOCHASTIC" volume="300"/>
+				<timeIntervalVehVolume cont="true" timeInt="1 900000" vehComp="1" volType="STOCHASTIC" volume="300"/>
+				<timeIntervalVehVolume cont="true" timeInt="1 1800000" vehComp="1" volType="STOCHASTIC" volume="300"/>
+				<timeIntervalVehVolume cont="true" timeInt="1 2700000" vehComp="1" volType="STOCHASTIC" volume="300"/>
+				<timeIntervalVehVolume cont="false" timeInt="1 3600000" vehComp="1" volType="STOCHASTIC" volume="0"/>
 			</timeIntVehVols>
 		</vehicleInput>
 		<vehicleInput anmFlag="false" link="12" name="" no="5">
 			<timeIntVehVols>
 				<timeIntervalVehVolume cont="false" timeInt="1 0" vehComp="1" volType="STOCHASTIC" volume="300"/>
+				<timeIntervalVehVolume cont="true" timeInt="1 900000" vehComp="1" volType="STOCHASTIC" volume="300"/>
+				<timeIntervalVehVolume cont="true" timeInt="1 1800000" vehComp="1" volType="STOCHASTIC" volume="300"/>
+				<timeIntervalVehVolume cont="true" timeInt="1 2700000" vehComp="1" volType="STOCHASTIC" volume="300"/>
+				<timeIntervalVehVolume cont="false" timeInt="1 3600000" vehComp="1" volType="STOCHASTIC" volume="0"/>
 			</timeIntVehVols>
 		</vehicleInput>
 		<vehicleInput anmFlag="false" link="14" name="" no="6">
 			<timeIntVehVols>
 				<timeIntervalVehVolume cont="false" timeInt="1 0" vehComp="1" volType="STOCHASTIC" volume="300"/>
+				<timeIntervalVehVolume cont="true" timeInt="1 900000" vehComp="1" volType="STOCHASTIC" volume="300"/>
+				<timeIntervalVehVolume cont="true" timeInt="1 1800000" vehComp="1" volType="STOCHASTIC" volume="300"/>
+				<timeIntervalVehVolume cont="true" timeInt="1 2700000" vehComp="1" volType="STOCHASTIC" volume="300"/>
+				<timeIntervalVehVolume cont="false" timeInt="1 3600000" vehComp="1" volType="STOCHASTIC" volume="0"/>
 			</timeIntVehVols>
 		</vehicleInput>
 		<vehicleInput anmFlag="false" link="19" name="Bike1" no="7">
 			<timeIntVehVols>
 				<timeIntervalVehVolume cont="false" timeInt="1 0" vehComp="2" volType="STOCHASTIC" volume="600"/>
+				<timeIntervalVehVolume cont="true" timeInt="1 900000" vehComp="2" volType="STOCHASTIC" volume="600"/>
+				<timeIntervalVehVolume cont="true" timeInt="1 1800000" vehComp="2" volType="STOCHASTIC" volume="600"/>
+				<timeIntervalVehVolume cont="true" timeInt="1 2700000" vehComp="2" volType="STOCHASTIC" volume="600"/>
+				<timeIntervalVehVolume cont="false" timeInt="1 3600000" vehComp="2" volType="STOCHASTIC" volume="0"/>
 			</timeIntVehVols>
 		</vehicleInput>
 		<vehicleInput anmFlag="false" link="20" name="" no="8">
 			<timeIntVehVols>
 				<timeIntervalVehVolume cont="false" timeInt="1 0" vehComp="2" volType="STOCHASTIC" volume="300"/>
+				<timeIntervalVehVolume cont="true" timeInt="1 900000" vehComp="2" volType="STOCHASTIC" volume="300"/>
+				<timeIntervalVehVolume cont="true" timeInt="1 1800000" vehComp="2" volType="STOCHASTIC" volume="300"/>
+				<timeIntervalVehVolume cont="true" timeInt="1 2700000" vehComp="2" volType="STOCHASTIC" volume="300"/>
+				<timeIntervalVehVolume cont="false" timeInt="1 3600000" vehComp="2" volType="STOCHASTIC" volume="0"/>
 			</timeIntVehVols>
 		</vehicleInput>
 	</vehicleInputs>
