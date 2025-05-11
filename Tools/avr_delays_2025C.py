@@ -77,9 +77,9 @@ biker_df = df[df["No"].between(21, 22)]
 biker_avg = biker_df["Delay"].mean()
 biker_count = len(biker_df)
 
-print(f"Altogether: Count: {total_vehs} Average delay: {total_avg_delay:.1f}")
+print(f"All measured trips: Count: {total_vehs} Average delay: {total_avg_delay:.1f}")
 
-print(f"Main roads (1-4): Count: {main_count} Average delay:  {main_road_avg:.1f}")
+print(f"Main routes (1-4): Count: {main_count} Average delay:  {main_road_avg:.1f}")
 
 print(f"Side roads (11–14): Count: {side_count} Average delay:  {side_road_avg:.1f}")
 

@@ -1,0 +1,33 @@
+
+Measurement area (raw data)
+
+File:        C:\Deve\vissim_exe\Testing\2junc_test\2junc3phase_QUUE1.inpx
+Comment:     
+Date:        10/05/2025 12.45.28
+Application: PTV Vissim 2023.00-05 [255660]
+
+MeasurementAreaNo : Section number
+tEnter            : Time pedestrian entered section(s) [simulation second]
+tLeave            : Time pedestrian left section(s) [simulation second]
+PedNo             : Pedestrian number
+PedType           : Pedestrian Type
+Dwell time        : Total time [s] pedestrian spent on section(s)
+vDes              : Desired speed [km/h]
+vX                : X component of the speed vector [km/h]
+vY                : Y component of the speed vector [km/h]
+v                 : Speed [km/h]
+DevSpeed          : Deviation of pedestrian speed [km/h]
+Density           : Density of pedestrians on section(s) [ped/m²]
+NextNeighbDist    : Distance to nearest neighbor [m]
+AvgXOri           : Average of x values of orientation vector
+AvgYOri           : Average of y values of orientation vector
+WorldX            : World coordinate x
+WorldY            : World coordinate y
+WorldZ            : World coordinate z
+TimeDelay         : Time delay [s]
+TimeGain          : Time gain [s]
+Dist              : Distance [m] pedestrian traveled on section(s)
+DistNetwork       : Distance [m] pedestrian traveled in network so far
+
+MeasurementAreaNo;  tEnter;  tLeave;  PedNo; PedType; Dwell time;   vDes;   vDes;   vDes;     vX;     vX;     vX;     vY;     vY;     vY;      v;      v;      v;  DevSpeed;   Density;   Density;   Density; NextNeighbDist; NextNeighbDist; NextNeighbDist;     AvgXOri;     AvgYOri;    WorldX;    WorldX;    WorldX;    WorldY;    WorldY;    WorldY;    WorldZ;    WorldZ;    WorldZ; TimeDelay;  TimeGain;      Dist; DistNetwork; 
+                 ;        ;        ;       ;        ;           ;    Avg;    Min;    Max;    Avg;    Min;    Max;    Avg;    Min;    Max;    Avg;    Min;    Max;          ;       Avg;       Min;       Max;            Avg;            Min;            Max;            ;            ;       Avg;       Min;       Max;       Avg;       Min;       Max;       Avg;       Min;       Max;          ;          ;          ;            ; 

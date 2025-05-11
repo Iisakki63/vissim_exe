@@ -20,7 +20,7 @@ def read_vissim_rsr(filepath):
     df = pd.DataFrame(data, columns=columns)
     return df
 
-filepath = '2junc3phase_VAP3_004.rsr'
+filepath = '2junc3phaseFIX_A_003.rsr'
 df = read_vissim_rsr(filepath)
 
 # Group and compute

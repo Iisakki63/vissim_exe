@@ -1,0 +1,25 @@
+﻿$VISION
+* File:		C:\Deve\vissim_exe\Testing\2junc_test\2junc3phase_TIME1.inpx
+* Comment:	
+* Date:		10/05/2025 11.47.18
+* Application:	PTV Vissim 2023.00-05 [255660]
+* 
+* Table: Queue Counters
+* 
+* NO: No, Number (Unique identification of the queue counter)
+* NAME: Name, Name (Name of queue counter)
+* LINK: Link, Link (Name of the link, on which the queue counter is defined)
+* POS: Pos, Position (Position on the link or connector) [m]
+* QLENMAX(AVG,MAX): QLenMax(Avg,Max), Queue length (maximum) (Avg,Max) (Queue length (maximum):  In each time step, the current queue length is measured upstream by the queue counter and the maximum is thus calculated per time interval.) [m]
+* 
+* No;Name;Link;Pos;QLenMax(Avg,Max)
+* Number;Name;Link;Position;Queue length (maximum) (Avg,Max)
+*
+$QUEUECOUNTER:NO;NAME;LINK;POS;QLENMAX(AVG,MAX)
+2;QS2;14;145,642;64,74
+3;QW2;17;55,729;259,51
+6;QN2;9;140,852;89,80
+7;QE2;18;54,907;89,22
+11;QBW2;19;346,717;16,41
+12;QBE2;20;108,525;13,06
+

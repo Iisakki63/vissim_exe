@@ -1098,15 +1098,15 @@
 		<routGuid2 interval="999999" offset="0" strategy="NEWROUTETODESTINATIONPARKINGLOT"/>
 	</dynamicAssignment>
 	<evaluation autoCreateResultColumns="true" boschEmiCalcAct="false" databaseConnection="" evalOutDir="#data#out" keepPrevResults="KEEPALL" listAutoExportType="FILE" nodesDelaySegmentStart="100" queueBeginSpeed="5" queueConsiderAdjacentLanes="true" queueEndSpeed="10" queueMaxClear="20" queueMaxLength="500">
-		<areaMeasRawData fromTime="0" toTime="99999" writeFile="true"/>
+		<areaMeasRawData fromTime="0" toTime="99999" writeFile="false"/>
 		<areaMeasResults collectData="false" fromTime="0" interval="99999" toTime="99999"/>
 		<areaResults collectData="false" fromTime="0" interval="99999" toTime="99999"/>
 		<convergence writeFile="false"/>
 		<dataColl collectData="false" fromTime="0" interval="99999" toTime="99999"/>
-		<dataCollRawData fromTime="0" toTime="99999" writeFile="true"/>
+		<dataCollRawData fromTime="0" toTime="99999" writeFile="false"/>
 		<delays collectData="true" fromTime="0" interval="99999" toTime="99999"/>
 		<dischRec fromTime="0" toTime="99999" writeFile="false"/>
-		<greenTimeDistribution fromTime="0" toTime="99999" writeFile="true"/>
+		<greenTimeDistribution fromTime="0" toTime="99999" writeFile="false"/>
 		<linkResults collectData="false" fromTime="0" interval="99999" perLane="false" toTime="99999"/>
 		<lnChgs filterType="ALL" fromTime="0" toTime="99999" writeFile="false"/>
 		<managedLanes writeFile="false"/>
