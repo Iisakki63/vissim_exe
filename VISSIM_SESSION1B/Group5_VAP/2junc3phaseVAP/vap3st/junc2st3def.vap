@@ -1,4 +1,4 @@
-PROGRAM junc1st3def; /* C:\Deve\vissim_exe\Testing\SIM1_START\vap3st\junc1st3def.vap */
+PROGRAM junc2st3def; /* D:\AALTO\VISSIM_EDU\TM2024_SimExe\VISSIM_EXE_2024\VISSIM_RUNS1\Group2_VAP\2junc3phaseVAP2\vap3st\junc2st3def.vap */
 
 VAP_FREQUENCY 1;
 
@@ -6,7 +6,7 @@ CONST
             MAX_GAP1 = 3,
             MAX_GAP2 = 3,
             MAX_GAP3 = 3,
-            MAX_STG1 = 60,
+            MAX_STG1 = 40,
             MAX_STG2 = 20,
             MAX_STG3 = 20;
 

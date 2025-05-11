@@ -1,14 +1,12 @@
-PROGRAM junc1st3def; /* C:\Deve\vissim_exe\Testing\SIM1_START\vap3st\junc1st3def.vap */
+PROGRAM junc1st2def; /* F:\AALTO\VISSIM_EDU\TM2023_SimExe\Models\2junc2phaseVAP\junc1st2def.vap */
 
 VAP_FREQUENCY 1;
 
 CONST 
             MAX_GAP1 = 3,
             MAX_GAP2 = 3,
-            MAX_GAP3 = 3,
-            MAX_STG1 = 60,
-            MAX_STG2 = 20,
-            MAX_STG3 = 20;
+            MAX_STG1 = 40,
+            MAX_STG2 = 20;
 
 /* ARRAYS */ 
 
@@ -18,8 +16,7 @@ CONST
             
 /* EXPRESSIONS */ 
             Extend_Stg1 := (Headway( 1 ) <= MAX_GAP1) OR (Headway( 2 ) <= MAX_GAP1) OR (Headway( 4 ) <= MAX_GAP1) OR (Headway( 5 ) <= MAX_GAP1);
-            Extend_Stg2 := (Headway( 7 ) <= MAX_GAP2) OR (Headway( 8 ) <= MAX_GAP2);
-            Extend_Stg3 := (Headway( 3 ) <= MAX_GAP3) OR (Headway( 6 ) <= MAX_GAP3);
+            Extend_Stg2 := (Headway( 3 ) <= MAX_GAP2) OR (Headway( 6 ) <= MAX_GAP2);
 
 /* MAIN PROGRAM */ 
 
@@ -42,20 +39,10 @@ S04Z008:            Interstage( 1 , 2 )
 S00Z009:        IF Stage_active( 2 ) THEN
 S01Z009:          IF StgT( 2 ) < MAX_STG2 THEN
 S03Z009:            IF NOT (Extend_Stg2) THEN
-S04Z010:              Interstage( 2 , 3)
+S04Z010:              Interstage( 2 , 1 )
                     END
                   ELSE
                     GOTO S04Z010
-                  END
-                ELSE
-S00Z011:          IF Stage_active( 3 ) THEN
-S01Z011:            IF StgT( 3 ) < MAX_STG3 THEN
-S03Z011:              IF NOT (Extend_Stg3) THEN
-S04Z012:                Interstage( 3 , 1 )
-                      END
-                    ELSE
-                      GOTO S04Z012
-                    END
                   END
                 END
               END

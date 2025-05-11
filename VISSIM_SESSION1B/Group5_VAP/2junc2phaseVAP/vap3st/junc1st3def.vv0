@@ -64,8 +64,8 @@ Z13|S5|L||11000100|0#
 KONSTANTEN
 MAX_GAP1|3|||||||||max gap time for extending stage 1#
 MAX_GAP2|3|||||||||max gap time for extending stage 2#
-MAX_GAP3|3|||||||||max gap time for extending stage 3#
-MAX_STG1|60|||||||||max. duration of stage 1#
+MAX_GAP3|10|||||||||max gap time for extending stage 3#
+MAX_STG1|40|||||||||max. duration of stage 1#
 MAX_STG2|20|||||||||max. duration of stage 2#
 MAX_STG3|20|||||||||max. duration of stage 3#
 
