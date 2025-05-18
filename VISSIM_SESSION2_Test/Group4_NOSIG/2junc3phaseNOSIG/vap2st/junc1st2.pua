@@ -1,0 +1,41 @@
+$SIGNAL_GROUPS
+$
+SG1main          1
+SG2side          2
+
+$IGM
+$
+         SG1main SG2side
+SG1main     -127       5
+SG2side        5    -127
+
+$STAGES
+$
+stage_1  SG1main
+red      SG2side
+stage_2  SG2side
+red      SG1main
+
+$STARTING_STAGE
+$
+stage_1 
+
+$INTERSTAGE
+INTERSTAGE_number :          1
+length [s]        :         10
+from stage        :          1
+to stage          :          2
+$
+SG1main       -127         0
+SG2side          4       127
+
+$INTERSTAGE
+INTERSTAGE_number :          2
+length [s]        :         10
+from stage        :          2
+to stage          :          1
+$
+SG1main          4       127
+SG2side       -127         0
+
+$END

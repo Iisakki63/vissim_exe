@@ -1,0 +1,32 @@
+﻿$VISION
+* File:		C:\Deve\vissim_exe\Testing\Group2_VAP\2junc2phaseVAP\2junc2phaseVAP_A.inpx
+* Comment:	
+* Date:		12/05/2025 18.18.41
+* Application:	PTV Vissim 2023.00-05 [255660]
+* 
+* Table: Queue Counters
+* 
+* NO: No, Number (Unique identification of the queue counter)
+* NAME: Name, Name (Name of queue counter)
+* LINK: Link, Link (Name of the link, on which the queue counter is defined)
+* POS: Pos, Position (Position on the link or connector) [m]
+* QLENMAX(CURRENT,MAX): QLenMax(Current,Max), Queue length (maximum) (Current,Max) (Queue length (maximum):  In each time step, the current queue length is measured upstream by the queue counter and the maximum is thus calculated per time interval.) [m]
+* QSTOPS(CURRENT,AVG): QStops(Current,Avg), Queue stops (Current,Avg) (Number of queue stops. A queue stop is where one vehicle that is directly upstream or within the queue length falls below the speed of the Begin attribute defined for the queue condition.)
+* 
+* No;Name;Link;Pos;QLenMax(Current,Max);QStops(Current,Avg)
+* Number;Name;Link;Position;Queue length (maximum) (Current,Max);Queue stops (Current,Avg)
+*
+$QUEUECOUNTER:NO;NAME;LINK;POS;QLENMAX(CURRENT,MAX);QSTOPS(CURRENT,AVG)
+1;QS1;12;145,530;25,94;9
+2;QS2;14;145,642;32,53;13
+3;QW2;17;55,729;33,47;12
+4;QW1;15;53,436;30,81;9
+5;QN1;7;140,215;32,38;12
+6;QN2;9;140,852;25,58;15
+7;QE2;18;54,907;27,01;9
+8;QE1;16;55,871;38,37;11
+9;QBW1;19;106,589;6,51;7
+10;QBE1;20;348,842;6,13;3
+11;QBW2;19;346,717;10,20;13
+12;QBE2;20;108,525;6,37;4
+
