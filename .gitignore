@@ -3,6 +3,7 @@
 *.fhz
 *.lzv
 *.mer
+*.att
 *.db
 *.db.old
 *.err
