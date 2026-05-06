@@ -1,0 +1,51 @@
+PROGRAM junc1st2def; /* F:\AALTO\VISSIM_EDU\TM2023_SimExe\Models\2junc2phaseVAP\junc1st2def.vap */
+
+VAP_FREQUENCY 1;
+
+CONST 
+            MAX_GAP1 = 3,
+            MAX_GAP2 = 3,
+            MAX_STG1 = 40,
+            MAX_STG2 = 20;
+
+/* ARRAYS */ 
+
+/* SUBROUTINES */ 
+
+/* PARAMETERS DEPENDENT ON SCJ-PROGRAM */ 
+            
+/* EXPRESSIONS */ 
+            Extend_Stg1 := (Headway( 1 ) <= MAX_GAP1) OR (Headway( 2 ) <= MAX_GAP1) OR (Headway( 4 ) <= MAX_GAP1) OR (Headway( 5 ) <= MAX_GAP1);
+            Extend_Stg2 := (Headway( 3 ) <= MAX_GAP2) OR (Headway( 6 ) <= MAX_GAP2);
+
+/* MAIN PROGRAM */ 
+
+S00Z001:    IF T_free( 1 ) = 1 THEN
+S01Z002:      cycSecond := 1
+            ELSE
+S00Z002:      cycSecond := cycSecond + 1
+            END;
+S00Z004:    SetT( cycSecond );
+S00Z006:    IF NOT (Any_interstage_active) THEN
+S00Z007:      IF Stage_active( 1 ) THEN
+S01Z007:        IF StgT( 1 ) < MAX_STG1 THEN
+S03Z007:          IF NOT (Extend_Stg1) THEN
+S04Z008:            Interstage( 1 , 2 )
+                  END
+                ELSE
+                  GOTO S04Z008
+                END
+              ELSE
+S00Z009:        IF Stage_active( 2 ) THEN
+S01Z009:          IF StgT( 2 ) < MAX_STG2 THEN
+S03Z009:            IF NOT (Extend_Stg2) THEN
+S04Z010:              Interstage( 2 , 1 )
+                    END
+                  ELSE
+                    GOTO S04Z010
+                  END
+                END
+              END
+            END
+PROG_ENDE:    .
+/*----------------------------------------------------------------------------*/
