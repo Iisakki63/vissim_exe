@@ -1,0 +1,16 @@
+Generated vehicle counts
+------------------------
+All: 389
+Cars (100, 200): 284
+Bikes (610): 105
+
+Links:
+Link   Label       All   Cars   Bikes
+3      West          94     94       0
+6      East          41     41       0
+7      North1        38     38       0
+9      North2        29     29       0
+12     South1        47     47       0
+14     South2        35     35       0
+19     Bikes West    74      0      74
+20     Bikes East    31      0      31

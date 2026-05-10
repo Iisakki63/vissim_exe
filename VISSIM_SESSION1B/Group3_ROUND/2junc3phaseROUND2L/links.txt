@@ -1,0 +1,9 @@
+Link  	Label
+3	West
+6	East
+12      South1
+14	South2
+7       North1
+9	North2
+19      Bikes West
+20	Bikes East
